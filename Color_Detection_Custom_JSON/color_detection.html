@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Detection</title>
+    <link rel="stylesheet" href="color_detection.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Detection</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <div class="canvas-container">
+            <canvas id="imageCanvas"></canvas>
+        </div>
+        <div id="colorInfo">
+            <p>Color: <span id="colorName">None</span></p>
+            <p>RGB: <span id="rgbValues">None</span></p>
+        </div>
+        <!-- Add an input for uploading the colors.json file -->
+        <input type="file" id="jsonInput" accept=".json">
+        <p id="jsonStatus">No colors.json file uploaded yet.</p>
+    </div>
+    <script src="color_detection.js"></script>
+</body>
+</html>

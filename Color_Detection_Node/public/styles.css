@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff9e80, #9b59b6); /* Peach to Light Purple */;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #d1c6e2; /* Soft Lavender */;
+    border: 2px solid #4a148c; /* Dark Purple */;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / .1);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 25px;
+    color:  #2A004E;
+    margin-bottom: 20px;
+  }
+  
+  #imageInput {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 2px solid #4a148c; /* Dark Purple */;
+    border-radius: 10px;
+    background-color:#b39ddb; /* Light Purple */;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #imageInput:hover {
+    background-color: #7E5CAD; /* Darker shade on hover */
+  }
+  
+  #imageCanvas {
+    border: 2px solid #A888B5;
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    margin-top: 20px;
+    background-color:#f7f7f7; /* Lighter Gray */
+    border-radius: 5px;
+  }
+  
+  .color-info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .color-info p {
+    margin-bottom: 8px;
+    font-size: 20px; /* Set a comfortable font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+    color: #2A004E; /* Very Dark Purple */
+    font-weight: 500; /* Slightly bold for emphasis */
+    line-height: 1.5; /* Makes the text more readable */
+  }
+  
+  #colorName {
+    font-weight: 700;
+    color:#69247C; 
+  }
+  
+  #rgbValues {
+    font-weight: 700;
+    color:#500073;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    #imageCanvas {
+      max-height: 300px;
+    }
+  
+    .color-info {
+      font-size: 14px;
+    }
+  
+    .color-info p {
+      margin-bottom: 10px;
+    }
+  }
+  
